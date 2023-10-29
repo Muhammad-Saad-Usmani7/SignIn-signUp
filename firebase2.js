@@ -19,7 +19,6 @@ const signup = ()=>{
    
   const email = document.getElementById("one").value;
   const password = document.getElementById("two").value;
-  console.log(email,password);
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
@@ -27,8 +26,7 @@ const signup = ()=>{
   })
   .catch((error) => {
 
-    var errorCode = error.code;
-    var errorMessage = error.message;
+    console.log(error);
 
   });
 }
@@ -47,13 +45,15 @@ const Login = ()=>{
   });
 }
 
-const alerts = document.getElementById("alrt");
+// const alerts = document.getElementById("alrt");
+// const closee = document.getElementById("closealrt");
+// closee.addEventListener("click",()=>{
+//   alerts.style.display = "none";
+// })
+
+const foo2 = ()=>{
+  const alerts = document.getElementById("alrt");
 const closee = document.getElementById("closealrt");
-closee.addEventListener("click",()=>{
-  alerts.style.display = "none";
-})
+alerts.style.display = "none";
 
-
-
-
-
+}
