@@ -42,6 +42,8 @@ const Login = ()=>{
   .catch(() => {
     const alerts = document.getElementById("alrt");
     alerts.style.display = "block";
+    const parent = document.getElementById("container");
+    parent.style.opacity = "0.4";
   });
 }
 
@@ -52,8 +54,10 @@ const Login = ()=>{
 // })
 
 const foo2 = ()=>{
-  const alerts = document.getElementById("alrt");
-const closee = document.getElementById("closealrt");
-alerts.style.display = "none";
+  const parent = document.getElementById("container");
+  const alerts = document.getElementById("alrt"); 
+  const closee = document.getElementById("closealrt");
+  alerts.style.display = "none";
+  parent.style.opacity = "1";
 
 }

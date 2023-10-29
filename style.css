@@ -41,5 +41,17 @@
     body{
         overflow: hidden;
     }
+    .alertt{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-align: center;
+        transform: translateY(-380px);
+        width: 80%;
+        height: 15rem;
+        padding-top: 50px;
+        /* margin-right: 60px; */
+        margin-left: 38px;
+        display: none;
+    }
   }
   
